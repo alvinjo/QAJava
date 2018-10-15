@@ -17,9 +17,17 @@ public class Person {
 	}
 	
 	
-	public ArrayList<Item> getItemsCheckedOut() {
-		return itemsCheckedOut;
+	public String getName() {
+		return name;
 	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+//	public ArrayList<Item> getItemsCheckedOut() {
+//		return itemsCheckedOut;
+//	}
 	
 	
 	

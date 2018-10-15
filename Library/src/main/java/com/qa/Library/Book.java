@@ -7,12 +7,7 @@ public class Book extends Item{
 		super(group);
 	}
 	
-	
-	@Override
-	public void showItemInformation() {
-		System.out.println("Books and such");
-		
-	}
+
 
 	
 	

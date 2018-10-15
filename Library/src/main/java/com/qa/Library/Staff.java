@@ -9,8 +9,5 @@ public class Staff extends Person{
 		this.role = role;
 	}
 
-	
-	
-	
-	
+		
 }
