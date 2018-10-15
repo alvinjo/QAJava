@@ -7,8 +7,11 @@ public class Book extends Item{
 		super(group);
 	}
 	
-
-
 	
+	
+	public void showSecurityLevel() {
+		System.out.println("Public");
+		
+	}
 	
 }

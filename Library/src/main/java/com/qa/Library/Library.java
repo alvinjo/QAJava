@@ -1,5 +1,10 @@
 package com.qa.Library;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -110,6 +115,27 @@ public class Library {
 			System.out.println(person.getName() + " removed");
 		}
 	}	
+	
+	
+	
+	public void writeItemListToFile() throws IOException {
+		BufferedWriter writer = null;
+		try {
+			writer = new BufferedWriter(new FileWriter(System.getProperty("user.dir") + "\\" + "LibraryItemsList.txt"));
+			writer.write(itemList.toString());
+		}catch(IOException e) {
+			System.out.println("Failed to write to file.");
+			e.printStackTrace();
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			if (writer != null) {
+				writer.close();
+				System.out.println("ItemList written to file.");
+			}
+		}
+		
+	}
 	
 	
 

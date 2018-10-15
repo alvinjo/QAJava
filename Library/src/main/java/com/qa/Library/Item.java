@@ -37,5 +37,13 @@ public abstract class Item {
 		this.itemInformation = info;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Item [itemID=" + itemID + ", group=" + group + ", itemInformation=" + itemInformation + "]";
+	}
+
+
+	public abstract void showSecurityLevel();
 
 }
