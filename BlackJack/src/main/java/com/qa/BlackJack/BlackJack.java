@@ -21,11 +21,15 @@ public class BlackJack {
 	public int compareCards() {
 		if(playerCard > 21 && dealerCard > 21) {
 			return 0;
-		}else if (playerCard > 21) {
+		} if (playerCard > 21) {
 			return dealerCard;
 		} else if (dealerCard > 21) {
 			return playerCard;
+		} else if (playerCard == dealerCard) {
+			return -1;
 		}
+		
+		
 		return playerCard > dealerCard ?  playerCard :  dealerCard;
 	}
 	
